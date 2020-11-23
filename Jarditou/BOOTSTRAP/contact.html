@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div id="container">
+            <img src="src/img/jarditou_logo.jpg" width="200" alt="?">
+            <div id="aside">
+                <aside>Tout le jardin</aside>
+            </div>
+        </div>
+        <div id="navbar">
+            <nav class="li-navbar">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="tableaux.html">Tableau</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<section>
+    <img src="src/img/promotion.jpg" width="1000" alt="?">
+    <h3>Contact</h3>
+    <hr>
+    <form action="http://bienvu.net/script.php" method="POST"></form>
+    <p>* Ces zones sont obligatoires</p>
+    <fieldset class="form" ><legend class="boxit"><b>Vos coordonnées</b></legend>
+        <label for="nom">Votre nom* :</label><input type="text" name="nom" id="nom" required><br>
+        <label for="prenom">Votre prénom :</label><input type="text" name="prenom" id="prenom" required><br>
+        <p>Sexe* :
+            <input type="radio" name="Sexe" value="Féminin" required> Féminin
+            <input type="radio" name="Sexe" value="Masculin" required> Masculin
+        </p>
+        <label for="date">Date de naissance* :</label>
+            <input type="date" name="ddn" id="date" required><br>
+        <label for="cp">Code Postale* :</label>
+            <input type="text" name="cp" id="cp" required><br>
+        <label for="adresse">Adresse :</label>
+            <input type="text" name="Adresse" id="adresse"><br>
+        <label for="Ville">Ville :</label>
+            <input type="text" name="Ville" id="Ville"><br>
+        <label for="Email">Email* :</label>
+            <input type="email" name="Email" id="Email" placeholder="dave.loper@afpa.fr" style="color: grey;"><br>    
+    </fieldset>
+<br>
+    <fieldset class="form" ><legend class="boxit">Votre demande</legend>
+        <label for="Sujet">Sujet* :</label>
+        <select name="Sujet" id="Sujet">
+            <option value="Veullez séléctionner un sujet">Veullez séléctionner un sujet</option>
+            <option value="Mes commandes">Mes commandes</option>
+            <option value="Question sur un produit">Question sur un produit</option>
+            <option value="Réclamation">Réclamation</option>
+            <option value="Autres">Autres</option>
+        </select>
+        <p><label for="textarea">Votre question* :</label>
+        <textarea name="Votre question" id="textarea" cols="20" rows="2" placeholder="Votre question" style="color: grey;"></textarea></p>
+    </fieldset>
+    <p><input type="checkbox" name="accept" id="?"> * J'accepte le traitement informatique de ce formulaire</p>
+    <input type="submit" name="checkbox" value="Envoyer" id="checkbox">
+    <input type="submit" name="checkbox" value="Annuler" id="submit">
+</section>
+<br>
+<footer>
+    <div id="footer">
+        <ul>
+            <li><a href="index.html">Mentions légales</a></li>
+            <li><a href="index.html">Horaires</a></li>
+            <li><a href="index.html">Plan de site</a></li>
+        </ul>
+    </div>
+</footer>
+
+<form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
