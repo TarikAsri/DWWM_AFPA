@@ -9,78 +9,97 @@
 <body>
     <header>
         <div id="container">
+            
             <img src="src/img/jarditou_logo.jpg" width="200" alt="?">
+            
             <div id="aside">
                 <aside>Tout le jardin</aside>
             </div>
         </div>
-        <div id="navbar">
-            <nav class="li-navbar">
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="tableaux.html">Tableau</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Jarditou.com</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"index.html>Index</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tableaux.html">Tableau<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
                 </ul>
-            </nav>
-        </div>
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Votre promotion">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+                </form>
+            </div>
+        </nav>
     </header>
 <div>
-    <img src="src/img/promotion.jpg" width="1000" alt="?">
+    <img src="src/img/promotion.jpg" class="img-fluid" alt="Responsive image">
 </div>
 <div>
     <h3>Tableau</h3>
-    <table border="1" id="table">
-    <thead id="thead">
-        <tr>
-            <th>Photo</th>
-            <th>ID</th>
-            <th>Catégorie</th>
-            <th>Libellé</th>
-            <th>Prix</th>
-            <th>Couleur</th>
-        </tr>
-    </thead>
-        <tr class="lightyellow">
-            <td><img src="src/img/7.jpg" height="100" alt="?"></td>
+    <table class="table table-bordered">
+        <thead>
+          <tr class="p-3 mb-2 bg-light text-dark">
+            <th scope="col">Photo</th>
+            <th scope="col">ID</th>
+            <th scope="col">Catégorie</th>
+            <th scope="col">Libellé</th>
+            <th scope="col">Prix</th>
+            <th scope="col">Couleur</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="src/img/7.jpg" alt="?" height="125"></td>
             <td>7</td>
             <td>Barbecues</td>
             <td>Aramis</td>
             <td>110.00€</td>
             <td>Brun</td>
-        </tr>
-        <tr class="simplewhite">
-            <td><img src="src/img/8.jpg" height="100" alt="?"></td>
+          </tr>
+          <tr class="p-3 mb-2 bg-warning text-dark">
+            <td><img src="src/img/8.jpg" alt="?" height="125"></td>
             <td>8</td>
-            <td>Barbecues</td>
+            <td>Barbacues</td>
             <td>Athos</td>
             <td>249.99€</td>
             <td>Noir</td>
-        </tr>
-        <tr class="lightyellow">
-            <td><img src="src/img/11.jpg" height="100" alt="?"></td>
+          </tr>
+          <tr>
+            <td><img src="src/img/11.jpg" alt="?" height="125"></td>
             <td>11</td>
-            <td>Barbecues</td>
+            <td>Barbacues</td>
             <td>Clatronic</td>
             <td>135.90€</td>
             <td>Chrome</td>
-        </tr>
-        <tr class="simplewhite">
-            <td><img src="src/img/12.jpg" height="100" alt="?"></td>
+          </tr>
+          <tr class="p-3 mb-2 bg-warning text-dark">
+            <td><img src="src/img/12.jpg" alt="?" height="125"></td> 
             <td>12</td>
             <td>Barbecues</td>
             <td>Camping</td>
-            <td>88.00€</td>
-            <td>Noir</td>
-        </tr>
-        <tr class="lightyellow">
-            <td><img src="src/img/13.jpg" height="100" width="100" alt="?"></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><img src="src/img/13.jpg" alt="?" height="125" width="175"></td>    
             <td>13</td>
             <td>Brouette</td>
             <td>Green</td>
             <td>49.00€</td>
             <td>Verte</td>
-        </tr>
-    </table>
+          </tr>
+        </tbody>
+      </table>
 </div>
 <footer>
     <div id="footer">
