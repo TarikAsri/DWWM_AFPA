@@ -8,13 +8,8 @@
 </head>
 <body>
     <header>
-        <div id="container">
-            
+        <div>
             <img src="src/img/jarditou_logo.jpg" width="200" alt="?">
-            
-            <div id="aside">
-                <aside>Tout le jardin</aside>
-            </div>
         </div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Jarditou.com</a>
@@ -24,10 +19,10 @@
           
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html"index.html>Index</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="tableaux.html">Tableau<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -41,12 +36,16 @@
             </div>
         </nav>
     </header>
-<div>
-    <img src="src/img/promotion.jpg" class="img-fluid" alt="Responsive image">
-</div>
+    <section>
+        <div class="container">
+            <div class="row"></div>
+                <div class="col-xl"><img src="src/img/promotion.jpg" class="img-fluid" alt="Responsive image"></div>
+        </div>
+    </section>
+<hr>
 <div>
     <h3>Tableau</h3>
-    <table class="table table-bordered">
+    <table class="table table-bordered" class="container-lg">
         <thead>
           <tr class="p-3 mb-2 bg-light text-dark">
             <th scope="col">Photo</th>
@@ -59,7 +58,7 @@
         </thead>
         <tbody>
           <tr>
-            <td><img src="src/img/7.jpg" alt="?" height="125"></td>
+            <td><img src="src/img/7.jpg" alt="?" height="100"></td>
             <td>7</td>
             <td>Barbecues</td>
             <td>Aramis</td>
@@ -67,7 +66,7 @@
             <td>Brun</td>
           </tr>
           <tr class="p-3 mb-2 bg-warning text-dark">
-            <td><img src="src/img/8.jpg" alt="?" height="125"></td>
+            <td><img src="src/img/8.jpg" alt="?" height="100"></td>
             <td>8</td>
             <td>Barbacues</td>
             <td>Athos</td>
@@ -75,7 +74,7 @@
             <td>Noir</td>
           </tr>
           <tr>
-            <td><img src="src/img/11.jpg" alt="?" height="125"></td>
+            <td><img src="src/img/11.jpg" alt="?" height="100"></td>
             <td>11</td>
             <td>Barbacues</td>
             <td>Clatronic</td>
@@ -83,15 +82,15 @@
             <td>Chrome</td>
           </tr>
           <tr class="p-3 mb-2 bg-warning text-dark">
-            <td><img src="src/img/12.jpg" alt="?" height="125"></td> 
+            <td><img src="src/img/12.jpg" alt="?" height="100"></td> 
             <td>12</td>
             <td>Barbecues</td>
             <td>Camping</td>
-            <td></td>
-            <td></td>
+            <td>88.00€</td>
+            <td>Noir</td>
           </tr>
           <tr>
-            <td><img src="src/img/13.jpg" alt="?" height="125" width="175"></td>    
+            <td><img src="src/img/13.jpg" alt="?" height="100" width="120"></td>    
             <td>13</td>
             <td>Brouette</td>
             <td>Green</td>
@@ -102,13 +101,26 @@
       </table>
 </div>
 <footer>
-    <div id="footer">
-        <ul>
-            <li><a href="index.html">Mentions légales</a></li>
-            <li><a href="index.html">Horaires</a></li>
-            <li><a href="index.html">Plan de site</a></li>
-        </ul>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Mentiones légales<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Horaires</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Plan du site</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

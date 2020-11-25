@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <div id="container">
+        <div>
             <img src="src/img/jarditou_logo.jpg" width="200" alt="?">
         </div>
         
@@ -20,13 +20,13 @@
           
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html"index.html>Index</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="tableaux.html">Tableau</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
             </li>
             </ul>
@@ -38,56 +38,113 @@
         </nav>
 
     </header>
-<section>
-    <img src="src/img/promotion.jpg" class="img-fluid" alt="Responsive image">
-    <h3>Contact</h3>
+    <section>
+        <div class="container">
+            <div class="row"></div>
+                <div class="col-xl"><img src="src/img/promotion.jpg" class="img-fluid" alt="Responsive image"></div>
+        </div>
+    </section>
+    <br>
+    <h1>Contact</h1>
     <hr>
-    <form action="http://bienvu.net/script.php" method="POST"></form>
     <p>* Ces zones sont obligatoires</p>
-    <fieldset class="form" ><legend class="boxit"><b>Vos coordonnées</b></legend>
-        <label for="nom">Votre nom* :</label><input type="text" name="nom" id="nom" required><br>
-        <label for="prenom">Votre prénom :</label><input type="text" name="prenom" id="prenom" required><br>
-        <p>Sexe* :
-            <input type="radio" name="Sexe" value="Féminin" required> Féminin
-            <input type="radio" name="Sexe" value="Masculin" required> Masculin
-        </p>
-        <label for="date">Date de naissance* :</label>
-            <input type="date" name="ddn" id="date" required><br>
-        <label for="cp">Code Postale* :</label>
-            <input type="text" name="cp" id="cp" required><br>
-        <label for="adresse">Adresse :</label>
-            <input type="text" name="Adresse" id="adresse"><br>
-        <label for="Ville">Ville :</label>
-            <input type="text" name="Ville" id="Ville"><br>
-        <label for="Email">Email* :</label>
-            <input type="email" name="Email" id="Email" placeholder="dave.loper@afpa.fr" style="color: grey;"><br>    
-    </fieldset>
-<br>
-    <fieldset class="form" ><legend class="boxit">Votre demande</legend>
-        <label for="Sujet">Sujet* :</label>
-        <select name="Sujet" id="Sujet">
-            <option value="Veullez séléctionner un sujet">Veullez séléctionner un sujet</option>
-            <option value="Mes commandes">Mes commandes</option>
-            <option value="Question sur un produit">Question sur un produit</option>
-            <option value="Réclamation">Réclamation</option>
-            <option value="Autres">Autres</option>
-        </select>
-        <p><label for="textarea">Votre question* :</label>
-        <textarea name="Votre question" id="textarea" cols="20" rows="2" placeholder="Votre question" style="color: grey;"></textarea></p>
-    </fieldset>
-    <p><input type="checkbox" name="accept" id="?"> * J'accepte le traitement informatique de ce formulaire</p>
-    <input type="submit" name="checkbox" value="Envoyer" id="checkbox">
-    <input type="submit" name="checkbox" value="Annuler" id="submit">
-</section>
+    <div class="coontainter">
+        <form>
+
+            <form>
+              <legend>Vos Coordonnées</legend>
+                <div class="form-row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Nom">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Prenom">
+                  </div>
+                </div>
+              </form>
+        <br>
+              <fieldset class="form-group">
+                <div class="row">
+                  <legend class="col-form-label col-sm-2 pt-0">Sexe : </legend>
+                  <div class="col-sm-10">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="inlineRadio1">Féminin</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio2">Masculin</label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+        <div class="form-group">
+            <label for="inputAddress">Adresse</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress2">Adresse 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+            <label for="inputCity">Ville</label>
+            <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+            <label for="inputState">Pays</label>
+            <select id="inputState" class="form-control">
+                <option selected>Chosissez</option>
+                <option>...</option>
+            </select>
+            </div>
+            <div class="form-group col-md-2">
+            <label for="inputZip">Code Postale</label>
+            <input type="text" class="form-control" id="inputZip">
+            </div>
+        </div>
+        <br>
+            <div>
+                <fieldset class="form" ><legend class="boxit">Votre demande</legend>
+                    <label for="Sujet">Sujet* :</label>
+                    <select name="Sujet" id="Sujet">
+                        <option value="Veullez séléctionner un sujet">Veullez séléctionner un sujet</option>
+                        <option value="Mes commandes">Mes commandes</option>
+                        <option value="Question sur un produit">Question sur un produit</option>
+                        <option value="Réclamation">Réclamation</option>
+                        <option value="Autres">Autres</option>
+                    </select>
+                    <p><label for="textarea">Votre question* :</label>
+                    <textarea name="Votre question" id="textarea" cols="20" rows="2" placeholder="Votre question" style="color: grey;"></textarea></p>
+                </fieldset>
+                
+                
+                <p><input type="checkbox" name="accept" id="?"> * J'accepte le traitement informatique de ce formulaire</p>
+                <input type="submit" name="checkbox" value="Envoyer" id="checkbox">
+                <input type="submit" name="checkbox" value="Annuler" id="submit">
+            </div>
 <br>
 <footer>
-    <div id="footer">
-        <ul>
-            <li><a href="index.html">Mentions légales</a></li>
-            <li><a href="index.html">Horaires</a></li>
-            <li><a href="index.html">Plan de site</a></li>
-        </ul>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Mentiones légales<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Horaires</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Plan du site</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 </footer>
 
 <!--this is safe to push now-->
