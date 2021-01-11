@@ -24,7 +24,7 @@ res = a + b;
 switch (operator)
 {
     case "+" :
-        console.log("Correct! Le resultat est " + res);
+        console.log("Correct! Les nombres sont 3 et 2, le resultat est " + res);
         break;
 
     case "-" :

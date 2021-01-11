@@ -1,0 +1,216 @@
+4.1
+var big, small, medium
+debut
+TOO WEIRD FOR ME LOL
+
+4.2
+VAR heure, minutes
+ecrire "Entrez l'heure exacte en heures et minutes :"
+lire heure
+lire minutes (can I do lire heure, minutes?)
+minutes ← ++minutes
+ecrire "Dans une minute, il sera " + heure + "heure(s)"  minutes + "minutes."
+fin
+-----------------------------------------------
+si il faut que l'heure soit exacte et que il y'aura une verification:
+debut
+var heure, minute
+ecrire "Entrez l'heure s'il vous plait :"
+lire heure
+lire minute
+minute ← ++minute
+si minute = 60
+	minute ← 0
+	heure ← ++heure
+fin si
+si heure = 24
+	heure ← 0
+fin si
+ecrire "Dans une minute, il sera " , heure , "heure(s)" , minute , "minutes."
+fin
+
+4.3
+debut
+var heu, min, sec (integer)
+ecrire "Entrez l'heure s'il vous plait :"
+lire heu
+lire min
+lire sec
+sec ← ++sec
+si sec = 60
+	sec ← 0
+	min ← ++min
+fin si
+si min = 60
+	min ← 0
+	heu ← ++heu
+fin si
+si heu = 24
+	heu ← 0
+fin si
+ecrire "Dans une seconde il sera " + heure + "heure(s)" + minute + "minutes et " + sec + "secondes."
+fin
+
+4.4
+var phtc, dix, vingt, audela
+dix ← 0.10
+vingt ← 0.09
+audela ← 0.08
+ecrire "Combien des photocopies vous voulez?"
+lire phtc
+si phtc <= 10
+	ecire "Votre montant est de " + phtc * dix + "€/cent."
+sinonsi phtc <= 20
+	ecire "Votre montant est de " + phtc * vingt + "€/cent."
+sinonsi phtc >= 21 
+	ecire "Votre montant est de " + phtc * audela + "€/cent."
+fin si
+
+4.5
+var sexe, age
+debut 
+ecrire "quel est votre age ?"
+lire age
+ecrire "Vous etes un homme ou une femme ?"
+lire sexe
+si sexe = "homme"
+	si age > 20
+		ecrire "Vous payez l'impot."
+	sinon
+		ecrire "Vous ne payes aps d'impot"
+	fin si
+sinonsi sexe = "femme"
+	si (age > 18 ET age < 35)
+		ecrire "Vous payez l'impot."
+	sinon
+		ecrire "Vous ne payes aps d'impot"
+	fin si
+sinon
+	ecrire "Vous payez l'impot."
+fin si 
+fin
+works just fine, but the way on the website includes booleans so it's smarter and more efficient!
+
+
+
+4.6
+var vote1, vote2, vote3, vote4 integer
+var C1, C2, C3, C4 boolean
+debut
+ecrire "Entrez les quatre scores:"
+Lire vote1, vote2, vote3, vote4
+C1 = vote1 > 50
+C2 = vote2 > 50 ou vote3 > 50 || vote4 > 50
+C3 = vote1 >= vote2 && vote1 >= vote3 && vote1 >= vote4
+C4 = vote1 >= 12,5
+
+si (C1) Alors {
+	  Ecrire “Elu au premier tour"
+
+} sinonsi (C2 || !C4) Alors {
+	  Ecrire “Battu, éliminé, sorti !!!”
+
+} sinonsi (C3) Alors {
+	  Ecrire "Ballotage favorable"
+
+} sinon {
+ 	 Ecrire "Ballotage défavorable"
+
+} finsi
+fin
+
+
+4.7
+P ← 0
+Si Non(C1) Alors
+  P ← P + 1
+FinSi
+Si Non(C2) Alors
+  P ← P + 1
+FinSi
+P ← P + acc
+Si P < 3 et C3 Alors
+  P ← P - 1
+FinSi
+Si P = -1 Alors
+  situ ← "Bleu"
+SinonSi P = 0 Alors
+  situ ← "Vert"
+SinonSi P = 1 Alors
+  situ ← "Orange"
+SinonSi P = 2 Alors
+  situ ← "Rouge"
+Sinon
+  situ ← "Refusé"
+FinSi
+Ecrire "Votre situation : ", situ
+Fin
+
+
+4.8
+Variables J, M, A, JMax en Numérique
+Variables VJ, VM, B en Booleen
+Début
+Ecrire "Entrez le numéro du jour"
+Lire J
+Ecrire "Entrez le numéro du mois"
+Lire M
+Ecrire "Entrez l'année"
+Lire A
+Si VJ et VM alors
+  Ecrire "La date est valide"
+Sinon
+  Ecrire "La date n'est pas valide"
+FinSi
+Si M < 1 ou M > 12 Alors
+  Ecrire "Date Invalide"
+SinonSi M = 2 Alors
+  Si A dp 400 Alors
+    Si J < 1 ou J > 29 Alors
+      Ecrire "Date Invalide"
+    Sinon
+      Ecrire "Date Valide"
+    FinSi
+  SinonSi A dp 100 Alors
+    Si J < 1 ou J > 28 Alors
+      Ecrire "Date Invalide"
+    Sinon
+      Ecrire "Date Valide"
+    FinSi
+  SinonSi A dp 4 Alors
+    Si J < 1 ou J > 29Alors
+      Ecrire "Date Invalide"
+    Sinon
+      Ecrire "Date Valide"
+    FinSi
+  Sinon
+    Si J < 1 ou J > 28 Alors
+      Ecrire "Date Invalide"
+    Sinon
+      Ecrire "Date Valide"
+    FinSi
+  FinSi
+SinonSi M = 4 ou M = 6 ou M = 9 ou M = 11 Alors
+  Si J < 1 ou J > 30 Alors
+    Ecrire "Date Invalide"
+  Sinon
+    Ecrire "Date Valide"
+  FinSi
+Sinon
+  Si J < 1 ou J > 31 Alors
+    Ecrire "Date Invalide"
+  Sinon
+    Ecrire "Date Valide"
+  FinSi
+FinSi
+B ← (A dp 4 et Non(A dp 100)) ou A dp 400
+K1 ← (m=1 ou m=3 ou m=5 ou m=7 ou m=8 ou m=10 ou m=12) et (J>=1 et J=<31)
+K2 ← (m=4 ou m=6 ou m=9 ou m=11) et (J>=1 et J=<30)
+K3 ← m=2 et B et J>=1 et J=<29
+K4 ← m=2 et J>=1 et J=<28
+Si K1 ou K2 ou K3 ou K4 Alors
+  Ecrire "Date valide"
+Sinon
+  Ecrire "Date non valide"
+FinSi
+Fin

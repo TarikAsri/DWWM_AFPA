@@ -1,0 +1,163 @@
+5.1
+
+Variable N en Entier
+Debut
+N ← 0
+Ecrire "Entrez un nombre entre 1 et 3"
+TantQue N < 1 ou N > 3
+  Lire N
+    Si N < 1 ou N > 3 Alors
+      Ecrire "Saisie erronée. Recommencez”
+    FinSi
+  FinTantQue
+Fin
+
+
+Exercice 5.2
+Variable N en Entier
+Debut
+N ← 0
+Ecrire "Entrez un nombre entre 10 et 20"
+TantQue N < 10 ou N > 20
+  Lire N
+  Si N < 10 Alors
+    Ecrire "Plus grand !"
+  SinonSi N > 20 Alors
+    Ecrire "Plus petit !"
+  FinSi
+FinTantQue
+Fin
+
+
+Exercice 5.3
+
+Variables N, i en Entier
+Debut
+Ecrire "Entrez un nombre : "
+Lire N
+Stop ← N+10
+Ecrire "Les 10 nombres suivants sont : "
+TantQue N < Stop
+   N ← N+1
+   Ecrire N
+FinTantQue
+Fin
+
+
+Exercice 5.4
+Variables N, i en Entier
+Debut
+Ecrire "Entrez un nombre : "
+Lire N
+Ecrire "Les 10 nombres suivants sont : "
+Pour i ← N + 1 à N + 10
+  Ecrire i
+i Suivant
+Fin
+
+
+
+Exercice 5.5
+Variables N, i en Entier
+Debut
+Ecrire "Entrez un nombre : "
+Lire N
+Ecrire "La table de multiplication de ce nombre est : "
+Pour i ← 1 à 10
+  Ecrire N, " x ", i, " = ", n*i
+i Suivant
+Fin
+
+
+Exercice 5.6
+Variables N, i, Som en Entier
+Debut
+Ecrire "Entrez un nombre : "
+Lire N
+Som ← 0
+Pour i ← 1 à N
+  Som ← Som + i
+i Suivant
+Ecrire "La somme est : ", Som
+Fin
+
+
+Exercice 5.7
+Variables N, i, F en Entier
+Debut
+Ecrire "Entrez un nombre : "
+Lire N
+F ← 1
+Pour i ← 2 à N
+  F ← F * i
+i Suivant
+Ecrire "La factorielle est : ", F
+Fin
+
+
+Exercice 5.8
+Variables N, i, PG en Entier
+Debut
+PG ← 0
+Pour i ← 1 à 20
+  Ecrire "Entrez un nombre : "
+  Lire N
+  Si i = 1 ou N > PG Alors
+    PG ← N
+  FinSi
+i Suivant
+Ecrire "Le nombre le plus grand était : ", PG
+Fin
+
+
+Exercice 5.9
+Variables N, i, PG, IPG en Entier
+Debut
+N ← 1
+i ← 0
+PG ← 0
+TantQue N <> 0
+  Ecrire "Entrez un nombre : "
+  Lire N
+  i ← i + 1
+  Si i = 1 ou N > PG Alors
+    PG ← N
+    IPG ← i
+  FinSi
+FinTantQue
+Ecrire "Le nombre le plus grand était : ", PG
+Ecrire "Il a été saisi en position numéro ", IPG
+Fin
+
+
+
+Exercice 5.10
+Variables E, somdue, M, Reste, Nb10E, Nb5E En Entier
+Debut
+E ← 1
+somdue ← 0
+TantQue E <> 0
+  Ecrire "Entrez le montant : "
+  Lire E
+  somdue ← somdue + E
+FinTantQue
+Ecrire "Vous devez :", somdue, " euros"
+Ecrire "Montant versé :"
+Lire M
+Reste ← M - somdue
+Nb10E ← 0
+TantQue Reste >= 10
+  Nb10E ← Nb10E + 1
+  Reste ← Reste – 10
+FinTantQue
+Nb5E ← 0
+Si Reste >= 5
+  Nb5E ← 1
+  Reste ← Reste – 5
+FinSi
+Ecrire "Rendu de la monnaie :"
+Ecrire "Billets de 10 E : ", Nb10E
+Ecrire "Billets de  5 E : ", Nb5E
+Ecrire "Pièces de 1 E : ", reste
+Fin
+

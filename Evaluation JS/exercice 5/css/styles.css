@@ -1,0 +1,95 @@
+body {
+    width: 1000px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#aside{
+    float: right;
+    font-size: xx-large;
+}
+
+#container *{
+    display: inline;
+    margin: 10px;
+}
+h3 {
+    padding: 0;
+}
+#navbar {
+    background: black;
+    padding: 5px;
+    color: white;
+}
+#navbar ul li {
+    display: inline;
+}
+#navbar .li-navbar ul li :visited {
+    color: rgb(255, 255, 255);
+}
+#section {
+    width: 700px;
+    height: 500px;
+    float: left;
+}
+#sidewindow {
+    background: lightgray;
+    width: 280px;
+    height: 480px;
+    padding: 10px;
+    float: right;
+}
+#footer {
+    clear: both;
+    background: black;
+    padding: 5px;
+    color: white;
+}
+#footer ul li {
+    display: inline;
+}
+#footer :visited{
+    color: white;
+}
+#table{
+    width: 1000px;
+}
+#thead {
+    background-color: lightgreen;
+}
+.lightyellow {
+    text-align: center;
+    background: rgb(255, 255, 200);
+}
+.simplewhite {
+    text-align: center;
+}
+.form {
+    background: rgb(150, 150, 150);
+}
+.boxit {
+    color: white;
+    background-color: rgb(150, 150, 150);
+    border: 1px solid black;
+}
+
+#pnom {
+    color: red;
+    font-size: 12px;
+}
+#pprenom {
+    color: red;
+    font-size: 12px;
+}
+#pville {
+    color: red;
+    font-size: 12px;
+}
+#pcp {
+    color: red;
+    font-size: 12px;
+}
+#pemail {
+    color: red;
+    font-size: 12px;
+}
