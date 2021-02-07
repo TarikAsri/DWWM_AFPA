@@ -1,0 +1,53 @@
+dictionnaire
+
+category
+	subcategories
+
+price
+
+internal reference
+
+EAN 
+
+physical stock
+
+color
+
+label
+
+description
+
+adding date
+
+updating date
+
+media name
+
+is on sale boolean
+	true or false for onsale/not
+
+supplier
+
+salesman
+
+new client form
+	username
+	password
+	contact
+	information
+	order
+	paiment
+	delivery
+
+discount per order
+
+employees
+working post
+shop
+role
+yearly salary
+old
+sex
+chlidren
+hierarchy
+
