@@ -4,6 +4,8 @@ young = 0;
 adult = 0;
 senior = 0;
 
+// 3allawi
+
 do { // what needs to be done is within the "DO"
     age = window.prompt("Enter your age");
     if (age < 20) {
