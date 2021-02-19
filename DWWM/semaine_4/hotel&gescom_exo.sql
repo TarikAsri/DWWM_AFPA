@@ -59,3 +59,26 @@ JOIN hotel ON reservation.res_cha_id = chambre.cha_hot_id;
 -- -----------------------------------------------
 -- E X E R C I S E   2   :   B A S E   G E S C O M  
 -- -----------------------------------------------
+
+-- 1. v_Details correspondant à la requête : _A partir de la table orders_details, afficher par code produit. la somme des quantités commandées et le prix total correspondant : on nommera la colonne correspondant à la somme des quantités commandées, QteTot et le prix total, PrixTot.
+
+USE gescom;
+
+CREATE VIEW v_details
+AS
+SELECT pro_ref, sum(ode_quantity) as 'QteTot', sum(ode_unit_price*ode_quantity) as 'PrixTot'
+FROM orders_details
+JOIN products ON ode_pro_id = pro_id
+order by 'QteTot';
+
+-- 2. v_Ventes_Zoom correspondant à la requête : Afficher les ventes dont le code produit est ZOOM (affichage de toutes les colonnes de la table orders_details).
+
+CREATE VIEW v_ventes_zoom
+AS
+SELECT * 
+FROM products
+JOIN orders_details
+ON ode_pro_id = pro_id
+WHERE pro_ref = 'ZOOM';
+
+-- normally iot should work, even if it's really not working... .-.
