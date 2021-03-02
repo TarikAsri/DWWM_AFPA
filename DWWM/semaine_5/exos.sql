@@ -62,7 +62,7 @@ call ajoutFournisseur(
 -- E X O s - P r o g r a m m e r   d e s   p r o c é d u r e s   s t o c k é e s 
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
--- EXO 1.1
+-- EXO 1.1 Créez la procédure stockée Lst_Suppliers correspondant à la requête afficher le nom des fournisseurs pour lesquels une commande a été passée.
 DELIMITER |
 
 CREATE PROCEDURE Lst_Suppliers()
@@ -74,10 +74,32 @@ BEGIN
     on sup_id = pro_sup_id;
 END |
 DELIMITER ;
+-- works!
 
--- EXO 1.2
+-- EXO 1.2 Exécutez la pour vérifier qu'elle fonctionne conformément à votre attente.
+CALL Lst_Suppliers;
+-- works!
 
+-- EXO 1.3 Exécutez la commande SQL suivante pour obtenir des informations sur cette procédure stockée :
+SHOW CREATE PROCEDURE Lst_Suppliers;
 
+-- EXO 2. Création d'une procédure stockée avec un paramètre en entrée
+-- Créer la procédure stockée Lst_Rush_Orders, qui liste les commandes ayant le libelle "commande urgente".
+
+DELIMITER |
+CREATE PROCEDURE Lst_Rush_Orders()
+BEGIN
+    SELECT ord_id
+    FROM orders
+    WHERE ord_status = 'Commande urgente';
+END |
+DELIMITER ;
+CALL Lst_Rush_Orders;
+
+-- EXO 3. Création d'une procédure stockée avec plusieurs paramètres
+-- Créer la procédure stockée CA_Supplier, qui pour un code fournisseur et une année entrée en paramètre, calcule et restitue le CA potentiel de ce fournisseur pour l'année souhaitée.
+-- On exécutera la requête que si le code fournisseur est valide, c'est-à-dire dans la table suppliers.
+-- Testez cette procédure avec différentes valeurs des paramètres.
 
 -- - - - - - - - - - - - - - -
 -- E X O s - T R I G G E R S -
@@ -160,3 +182,13 @@ BEGIN
     UPDATE commande SET remise = (SELECT (total/100)*5);
 END |
 DELIMITER;
+
+INSERT INTO lignedecommande (id_commande, id_produit, quantite, prix) VALUES
+(1, 4, 2, 500);
+-- works!
+
+-- - - - - - - - - - - - - - - - - - - - 
+-- - - - - - - P H A S E - 2 - - - - - -
+-- - - - - - - - - - - - - - - - - - - - 
+
+
