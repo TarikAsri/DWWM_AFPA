@@ -68,27 +68,27 @@ use gescom;
 CREATE table commander_articles (
     `codart` INT NOT NULL primary key,
     `qte` INT NOT NULL index,
-    `date` datetime NOT NULL default now(),
+    `date` datetime NOT NULL default now()
     
 );
--- - - - - - - - - - - - - - - - - - - - - - - - - - - -
-DELIMITER |
+-- - - - - - - - - - - - - - - - - - - - - - - - -
+--DELIMITER |                                    -
+--CREATE TRIGGER after_products_update           -   
+--AFTER UPDATE ON products                       -
+--FOR EACH ROW                                   -
+--BEGIN                                          -
+--    IF                                         -
+--        products.pro_stock_alert < 5           -
+--    THEN                                       -
+--        INSERT INTO commander_articles VALUES  -
+--END |                                          -
+--DELIMITER ;                                    -
+-- - - - - - - - - - - - - - - - - - - - - - - - -
 
-CREATE TRIGGER after_products_update
-AFTER UPDATE ON products
-FOR EACH ROW
-
-BEGIN
-    IF 
-        products.pro_stock_alert < 5
-    THEN 
-        INSERT INTO commander_articles VALUES
-
-
-END |
-DELIMITER ;
-
--- - - - - - - - - - - - T R A N S A C T I O N S : - - - - - - - - - - - - 
+-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-- - - - - - - - - - - - T R A N S A C T I O N S : - - - - - - - - - - - -
+-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ 
 -- Amity HANAH, Manageuse au sein du magasin d'Arras, vient de prendre sa retraite. Il a été décidé, après de nombreuses tractations, de confier son poste au pépiniériste le plus ancien en poste dans ce magasin. Ce dernier voit alors son salaire augmenter de 5% et ses anciens collègues pépiniéristes passent sous sa direction.
 
 -- Ecrire la transaction permettant d'acter tous ces changements en base des données.
