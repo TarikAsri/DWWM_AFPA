@@ -1,0 +1,1 @@
+semaine tres difficile... j'ai pas pu realiser du travail car j'avais pratiquement rien compris
