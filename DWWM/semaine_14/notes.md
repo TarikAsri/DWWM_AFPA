@@ -1,3 +1,8 @@
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+
+
+
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
 
 **What this whole thing was trying to say is that:**
 
@@ -15,3 +20,12 @@ so if we were to manipulate the data that will be entered later on, that data wi
 But if it's *protected* instead, then a child class that inherits from the parent class, will be able to manipulate the data from within as well...
 
 **PRIVATE** and **PROTECTED** never allow foreign files to access the properties, no matter what, only *PUBLIC* does that.
+
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+
+Do not forget getters and setters as well, keep in mind:
+
+• **MUTATORS** defines or modifies the value passed down as an argument to a property
+
+• **ACCESSORS** returns the value of a property
+
